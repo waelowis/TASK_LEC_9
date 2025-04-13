@@ -10,15 +10,16 @@
             }
             return true;
         }
-        public static bool IsNotContainVowels(string text)
+
+        public static bool IsContainVowels(string text)
         {
             string vowels = "aeiouAEIOU";
             foreach (char c in text)
             {
-                if (vowels.Contains(c))
-                    return false;
+                if (vowels.Contains(c)) return true;
+
             }
-            return true;
+            return false;
         }
 
 
